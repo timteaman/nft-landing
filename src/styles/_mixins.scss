@@ -1,0 +1,6 @@
+@mixin fontFamily($fontName) {
+  font-family: #{$fontName},
+  Arial,
+  Tahoma,
+  sans-serif;
+}

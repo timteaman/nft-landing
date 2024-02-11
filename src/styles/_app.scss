@@ -1,0 +1,21 @@
+@import './variables';
+@import './mixins';
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  @include fontFamily('Work Sans');
+  color: var(--color-white);
+  background-color: var(--color-midle-black);
+}
+
+.container {
+  max-width: 105rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}

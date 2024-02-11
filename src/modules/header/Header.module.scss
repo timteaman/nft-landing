@@ -1,0 +1,13 @@
+.header {
+  padding: 3.4rem 5rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 5rem;
+  }
+}
