@@ -1,0 +1,19 @@
+.icon {
+  &::before {
+    content: '';
+    display: inline-block;
+    background-color: var(--color-pure-white);
+    min-width: 2.4rem;
+    height: 2.4rem;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+    transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
+  }
+
+  &--avatarPlaceholder {
+    &::before {
+      mask-image: url('../../public/assets/icons/avatarPlaceholder.svg');
+    }
+  }
+}

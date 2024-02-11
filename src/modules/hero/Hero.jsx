@@ -1,13 +1,15 @@
 import React from 'react';
-import styles from './Hero.module.scss';
 import Statistics from '../../components/statistics/statistics';
+import CardBig from '../../components/cards/CardBig/CardBig';
+import styles from './Hero.module.scss';
+import image from '../../../public/assets/images/hero/nft-card.webp';
 
 function Hero() {
   return (
-    <section className={styles.section}>
+    <section className={`${styles.section} ${styles.hero}`}>
       <div className={styles.hero__inner}>
         <h1 className={styles.hero__title}>
-          Discover digital art & Collect NFTs
+          Discover Digital art & Collect NFTs
         </h1>
         <p className={styles.hero__subtitle}>
           NFT marketplace UI created with Anima for Figma. Collect, buy and sell
@@ -20,6 +22,8 @@ function Hero() {
           <Statistics count="220k&#43;" text="Artists" />
         </div>
       </div>
+
+      <CardBig imageUrl={image} title="Space Walking" artist="Animakid" />
     </section>
   );
 }

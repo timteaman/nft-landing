@@ -1,16 +1,16 @@
 import React from 'react';
-import styles from './header.module.scss';
 import logo from '@icons/logo.svg';
+import { Headerw, Menu, MenuList } from './Header.styles';
 
 function Header() {
   return (
-    <header className={styles.header}>
-      <nav className={styles.menu}>
+    <Headerw>
+      <Menu>
         <a className="logo header__logo" href="#">
           <img src={logo} alt="company logo" width="244" height="32" />
         </a>
 
-        <ul className={styles.menu__list}>
+        <MenuList>
           <li className="menu__item">
             <a href="">Marketplace</a>
           </li>
@@ -20,11 +20,11 @@ function Header() {
           <li className="menu__item">
             <a href="">Connect a wallet</a>
           </li>
-        </ul>
+        </MenuList>
 
         <button className="sign-up"></button>
-      </nav>
-    </header>
+      </Menu>
+    </Headerw>
   );
 }
 

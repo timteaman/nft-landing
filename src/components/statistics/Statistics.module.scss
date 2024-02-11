@@ -1,7 +1,8 @@
 @import '../../styles/mixins';
 
 .statistics {
-
+  max-width: 15rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
