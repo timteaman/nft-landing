@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js',
+    filename: '[name].js',
     clean: true,
     publicPath: '/',
   },
@@ -43,7 +43,7 @@ module.exports = {
             options: {
               modules: {
                 mode: 'local',
-                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                localIdentName: '[path][name]__[local]',
               },
             },
           },
