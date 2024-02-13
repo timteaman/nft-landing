@@ -1,0 +1,14 @@
+.auth-button {
+  background-color: var(--color-peorple);
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &::before {
+    width: 2rem;
+    height: 2rem;
+  }
+}

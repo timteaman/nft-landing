@@ -1,8 +1,9 @@
 import React from 'react';
 import Statistics from '../../components/statistics/statistics';
-import CardBig from '../../components/cards/CardBig/CardBig';
+import CardBig from '../../components/cards/cardBig/cardBig';
 import styles from './Hero.module.scss';
-import image from '../../../public/assets/images/hero/nft-card.webp';
+import image from '@images/hero/nft-card.webp';
+import Button from '../../shared/Button/Button';
 
 function Hero() {
   return (
@@ -15,6 +16,8 @@ function Hero() {
           NFT marketplace UI created with Anima for Figma. Collect, buy and sell
           art from more than 20k NFT artists.
         </p>
+
+        <Button buttonText="Get Started" />
 
         <div className={styles.hero__wrapper}>
           <Statistics count="240k&#43;" text="Total Sale" />

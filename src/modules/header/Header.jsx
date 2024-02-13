@@ -1,30 +1,38 @@
 import React from 'react';
 import logo from '@icons/logo.svg';
-import { Headerw, Menu, MenuList } from './Header.styles';
+import styles from './Header.module.scss';
+
+import AuthButton from '../../components/AuthButton/AuthButton';
 
 function Header() {
   return (
-    <Headerw>
-      <Menu>
-        <a className="logo header__logo" href="#">
-          <img src={logo} alt="company logo" width="244" height="32" />
+    <header className={styles.header}>
+      <menu className={styles.menu}>
+        <a className={`${styles.menu__logo} ${styles.logo}`} href="#">
+          <img
+            className={styles.menu__img}
+            src={logo}
+            alt="company logo"
+            width="244"
+            height="32"
+          />
         </a>
 
-        <MenuList>
-          <li className="menu__item">
+        <ul className={styles.menu__list}>
+          <li className={styles.menu__item}>
             <a href="">Marketplace</a>
           </li>
-          <li className="menu__item">
+          <li className={styles.menu__item}>
             <a href="">Rankings</a>
           </li>
-          <li className="menu__item">
+          <li className={styles.menu__item}>
             <a href="">Connect a wallet</a>
           </li>
-        </MenuList>
+        </ul>
 
-        <button className="sign-up"></button>
-      </Menu>
-    </Headerw>
+        <AuthButton buttonText="Sign Up" />
+      </menu>
+    </header>
   );
 }
 

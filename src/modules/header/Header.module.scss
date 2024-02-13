@@ -1,0 +1,23 @@
+.header {
+  padding: 3.4rem 5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+
+  &__list {
+    display: flex;
+    gap: 5rem;
+    margin-right: 3rem;
+  }
+
+  &__item {
+    font-weight: 600;
+  }
+}

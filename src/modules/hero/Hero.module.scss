@@ -6,8 +6,12 @@
   display: flex;
   justify-content: space-between;
 
+
   &__inner {
     max-width: 51rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 
   &__title {
@@ -18,7 +22,6 @@
 
   &__subtitle {
     font-size: 2.2rem;
-    margin-bottom: 3rem;
   }
 
   &__wrapper {

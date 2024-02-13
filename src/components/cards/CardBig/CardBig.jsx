@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './CardBig.module.scss';
-import iconStyles from '../../../styles/_icons.scss';
 
 function CardBig({ imageUrl, title, artist }) {
   return (
@@ -13,11 +12,7 @@ function CardBig({ imageUrl, title, artist }) {
         height="400"
       />
       <div className={styles['card-big__box']}>
-        <h2
-          className={`${styles['card-big__title']} ${iconStyles['icon']} ${iconStyles['icon--avatarPlaceholder']}`}
-        >
-          {title}
-        </h2>
+        <h2 className={`${styles['card-big__title']}`}>{title}</h2>
         <span className={styles['card-big__artist']}>{artist}</span>
       </div>
     </article>

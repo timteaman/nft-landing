@@ -1,4 +1,20 @@
 .trending-collection {
-  display: flex;
-  gap: 3rem;
+
+  &__inner {
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-size: 2.2rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3rem;
+  }
 }

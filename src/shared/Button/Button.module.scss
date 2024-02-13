@@ -1,0 +1,16 @@
+.button {
+  border-radius: 2rem;
+  padding: 2rem 5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: var(--color-peorple);
+  width: fit-content;
+
+  &::before {
+    width: 2rem;
+    height: 2rem;
+  }
+
+}

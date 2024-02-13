@@ -11,9 +11,15 @@
     transition: background-color 0.3s, color 0.3s, outline-color 0.3s;
   }
 
-  &--avatarPlaceholder {
+  &--user {
     &::before {
-      mask-image: url('../../public/assets/icons/avatarPlaceholder.svg');
+      mask-image: url('../../public/assets/icons/sprite.svg#User');
+    }
+  }
+
+  &--RocketLaunch {
+    &::before {
+      mask-image: url('../../public/assets/icons/sprite.svg#RocketLaunch');
     }
   }
 }
