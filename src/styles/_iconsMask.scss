@@ -13,13 +13,13 @@
 
   &--user {
     &::before {
-      mask-image: url('../../public/assets/icons/sprite.svg#User');
+      mask-image: url('@assets/icons/sprite.svg#User');
     }
   }
 
   &--RocketLaunch {
     &::before {
-      mask-image: url('../../public/assets/icons/sprite.svg#RocketLaunch');
+      mask-image: url('@assets/icons/sprite.svg#RocketLaunch');
     }
   }
 }

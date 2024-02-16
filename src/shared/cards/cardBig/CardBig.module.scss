@@ -17,4 +17,10 @@
     align-items: center;
   }
 
+
+  &__artist {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
 }

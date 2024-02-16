@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Statistics.module.scss';
-import '../../styles/_fonts.scss';
+import '@styles/_fonts.scss';
 
-function Statistics(props) {
-  const { count, text } = props;
+function Statistics({ count, text }) {
   return (
     <div className={styles.statistics}>
       <span className={styles.statistics__count}>{count}</span>

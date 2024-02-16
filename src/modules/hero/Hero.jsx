@@ -1,9 +1,9 @@
 import React from 'react';
-import Statistics from '../../components/statistics/statistics';
-import CardBig from '../../components/cards/cardBig/cardBig';
+import Statistics from '@components/statistics/statistics';
+import CardBig from '@shared/cards/CardBig/CardBig';
 import styles from './Hero.module.scss';
-import image from '@images/hero/nft-card.webp';
-import Button from '../../shared/Button/Button';
+import image from '@assets/images/hero/nft-card.webp';
+import Button from '@shared/Button/Button';
 
 function Hero() {
   return (

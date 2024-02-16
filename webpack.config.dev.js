@@ -63,8 +63,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@icons': path.resolve(__dirname, 'public/assets/icons'),
-      '@images': path.resolve(__dirname, 'public/assets/images'),
+      '@assets': path.resolve(__dirname, 'public/assets'),
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@modules': path.resolve(__dirname, 'src/modules'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@shared': path.resolve(__dirname, 'src/shared'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
     },
   },
   plugins: [

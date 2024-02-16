@@ -1,7 +1,7 @@
 import React from 'react';
-import Collection from '../../components/collection/Collection';
+import Collection from '@components/collection/Collection';
 import styles from './TrendingCollection.module.scss';
-import trendingCollectionImg from '../../../public/assets/images/trendingCollection/trendingCollection.json';
+import collectionData from './collectionsData.json';
 
 function TrendingCollection() {
   return (
@@ -16,30 +16,11 @@ function TrendingCollection() {
       </div>
 
       <ul className={styles['trending-collection__list']}>
-        <li className={styles['trending-collection__item']}>
-          <Collection
-            images={[trendingCollectionImg.images.primary1]}
-            count="1025+"
-            title="DSGN Animals"
-            artist="MrFox"
-          />
-        </li>
-        <li className={styles['trending-collection__item']}>
-          <Collection
-            images={[trendingCollectionImg.images.primary1]}
-            count="800+"
-            title="Magic Mushrooms"
-            artist="Shroomie"
-          />
-        </li>
-        <li className={styles['trending-collection__item']}>
-          <Collection
-            images={[trendingCollectionImg.images.primary1]}
-            count="100+"
-            title="Disco Machines"
-            artist="BeKind2Robots"
-          />
-        </li>
+        {collectionData.map((item, index) => (
+          <li className={styles['trending-collection__item']} key={index}>
+            <Collection {...item} />
+          </li>
+        ))}
       </ul>
     </section>
   );

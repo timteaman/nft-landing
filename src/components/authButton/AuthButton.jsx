@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from './AuthButton.scss';
-import icons from '../../styles/_icons.scss';
+import iconsMask from '@styles/_iconsMask.scss';
 
-const AuthButton = ({ onClick, buttonText }) => {
+const AuthButton = ({
+  onClick,
+  buttonText,
+  type = 'button',
+  className = '',
+}) => {
   return (
     <button
-      className={`${styles['auth-button']} ${icons.icon} ${icons['icon--user']} `}
+      type={type}
+      className={`${styles['auth-button']} ${iconsMask.icon} ${iconsMask['icon--user']} ${className}`}
       onClick={onClick}
     >
       {buttonText}

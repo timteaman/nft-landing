@@ -1,0 +1,35 @@
+[
+  {
+    "primaryImage": "https://storage.googleapis.com/images-nft/1primary.webp",
+    "secondaryImages": [
+      "https://storage.googleapis.com/images-nft/1-1Secondary.webp",
+      "https://storage.googleapis.com/images-nft/1Secondary.webp"
+    ],
+    "alt": "DSGN Animals",
+    "count": "1025+",
+    "title": "DSGN Animals",
+    "artist": "MrFox"
+  },
+  {
+    "primaryImage": "https://storage.googleapis.com/images-nft/2primary.webp",
+    "secondaryImages": [
+      "https://storage.googleapis.com/images-nft/2Secondary.webp",
+      "https://storage.googleapis.com/images-nft/2-1Secondary.webp"
+    ],
+    "alt": "Magic Mushrooms",
+    "count": "800+",
+    "title": "Magic Mushrooms",
+    "artist": "Shroomie"
+  },
+  {
+    "primaryImage": "https://storage.googleapis.com/images-nft/3primary.webp",
+    "secondaryImages": [
+      "https://storage.googleapis.com/images-nft/3-1Secondary.webp",
+      "https://storage.googleapis.com/images-nft/3Secondary.webp"
+    ],
+    "alt": "Disco Machines",
+    "count": "100+",
+    "title": "Disco Machines",
+    "artist": "BeKind2Robots"
+  }
+]
