@@ -10,7 +10,7 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'inline-source-map',
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
@@ -53,6 +53,11 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
       },
       {
         test: /\.html$/,

@@ -1,19 +1,11 @@
 import React from 'react';
 import styles from './AuthButton.scss';
-import iconsMask from '@styles/_iconsMask.scss';
+import SvgUserIcon from '@shared/icons/UserIcon';
 
-const AuthButton = ({
-  onClick,
-  buttonText,
-  type = 'button',
-  className = '',
-}) => {
+const AuthButton = ({ buttonText, type }) => {
   return (
-    <button
-      type={type}
-      className={`${styles['auth-button']} ${iconsMask.icon} ${iconsMask['icon--user']} ${className}`}
-      onClick={onClick}
-    >
+    <button type={type} className={styles['auth-button']}>
+      <SvgUserIcon />
       {buttonText}
     </button>
   );

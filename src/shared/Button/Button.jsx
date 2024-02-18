@@ -1,11 +1,10 @@
-import iconsMask from '@styles/_iconsMask.scss';
 import styles from './Button.module.scss';
+import SvgRocketIcon from '@shared/icons/RocketIcon';
 
 function Button({ buttonText }) {
   return (
-    <button
-      className={`${styles.button} ${iconsMask.icon} ${iconsMask['icon--RocketLaunch']}`}
-    >
+    <button className={styles.button}>
+      <SvgRocketIcon />
       {buttonText}
     </button>
   );

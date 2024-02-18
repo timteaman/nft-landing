@@ -26,7 +26,14 @@ function Hero() {
         </div>
       </div>
 
-      <CardBig imageUrl={image} title="Space Walking" artist="Animakid" />
+      <CardBig
+        imageSrc={image}
+        title="Space Walking"
+        artist="Animakid"
+        width="510"
+        height="400"
+        alt="astronaut on the moon"
+      />
     </section>
   );
 }

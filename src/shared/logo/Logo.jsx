@@ -1,18 +1,11 @@
 import React from 'react';
 import styles from './Logo.module.scss';
+import SvgLogoMainIcon from '@shared/icons/LogoMainIcon';
 
-function Logo(props) {
-  const { src, href, alt, width, height } = props;
-
+function Logo({ href, alt, width, height }) {
   return (
-    <a className={styles.logo} href={href}>
-      <img
-        className={styles.logo__img}
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-      />
+    <a className={styles.logo} href={href} aria-label={alt}>
+      <SvgLogoMainIcon className={styles.logo__img} style={{ width, height }} />
     </a>
   );
 }

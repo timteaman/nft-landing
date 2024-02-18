@@ -1,3 +1,19 @@
 .logo {
   margin-right: auto;
+  transition: transform 0.4s, opacity 0.4s, outline 0.4s, outline-offset 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-peorple);
+    outline-offset: 5px;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
 }

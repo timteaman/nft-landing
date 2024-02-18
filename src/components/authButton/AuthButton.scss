@@ -5,14 +5,11 @@
   font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 
   &:hover {
     transform: scale(1.2);
   }
 
-  &::before {
-    width: 2rem;
-    height: 2rem;
-  }
 }
