@@ -1,4 +1,4 @@
-import styles from './Button.module.scss';
+import styles from './styles.module.scss';
 import SvgRocketIcon from '@shared/icons/RocketIcon';
 
 function Button({ buttonText }) {

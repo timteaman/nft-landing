@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Statistics.module.scss';
+import styles from './styles.module.scss';
 import '@styles/_fonts.scss';
 
 function Statistics({ count, text }) {

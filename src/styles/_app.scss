@@ -1,7 +1,6 @@
 @import './variables';
 @import './mixins';
 
-
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -13,9 +12,4 @@ body {
   @include fontFamily('Work Sans');
   color: var(--color-white);
   background-color: var(--color-midle-black);
-}
-
-.container {
-  max-width: 105rem;
-  margin: 0 auto;
 }

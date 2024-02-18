@@ -1,7 +1,7 @@
 import React from 'react';
 import Statistics from '@components/statistics/statistics';
 import CardBig from '@shared/cards/CardBig/CardBig';
-import styles from './Hero.module.scss';
+import styles from './styles.module.scss';
 import image from '@assets/images/hero/nft-card.webp';
 import Button from '@shared/Button/Button';
 

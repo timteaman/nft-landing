@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CardBig.module.scss';
+import styles from './styles.module.scss';
 
 function CardBig({ imageSrc, alt, title, artist, width, height }) {
   return (

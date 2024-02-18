@@ -1,6 +1,6 @@
 import React from 'react';
 import Collection from '@components/collection/Collection';
-import styles from './TrendingCollection.module.scss';
+import styles from './styles.module.scss';
 import collectionData from './collectionsData.json';
 
 function TrendingCollection() {

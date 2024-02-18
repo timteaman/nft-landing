@@ -1,19 +1,15 @@
-import Header from './modules/header/Header';
-import Hero from './modules/hero/Hero';
-import TrendingCollection from './modules/trendingCollection/TrendingCollection';
-import styles from './styles/_app.scss';
+import { BrowserRouter } from 'react-router-dom';
+
+import './styles/_app.scss';
 import './styles/_fonts.scss';
 import './styles/_reset.scss';
+import AppRoutes from './AppRoutes';
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <div className={styles.container}>
-        <Hero />
-        <TrendingCollection />
-      </div>
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   );
 };
 

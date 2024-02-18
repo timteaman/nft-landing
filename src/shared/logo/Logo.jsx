@@ -1,12 +1,12 @@
-import React from 'react';
-import styles from './Logo.module.scss';
+import { Link } from 'react-router-dom';
+import styles from './styles.module.scss';
 import SvgLogoMainIcon from '@shared/icons/LogoMainIcon';
 
-function Logo({ href, alt, width, height }) {
+function Logo({ alt, width, height }) {
   return (
-    <a className={styles.logo} href={href} aria-label={alt}>
+    <Link to="/" className={styles.logo} aria-label={alt}>
       <SvgLogoMainIcon className={styles.logo__img} style={{ width, height }} />
-    </a>
+    </Link>
   );
 }
 
