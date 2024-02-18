@@ -7,9 +7,20 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  outline: 1px solid transparent;
+  transition: transform 0.4s, opacity 0.4s, outline-color 0.4s, outline-offset 0.4s;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    background-color: var(--color-light-purple);
+  }
+
+  &:active {
+    transform: scale(0.9);
+    opacity: 0.9;
   }
 
 }

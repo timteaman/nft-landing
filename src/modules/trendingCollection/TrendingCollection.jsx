@@ -16,8 +16,11 @@ function TrendingCollection() {
       </div>
 
       <ul className={styles['trending-collection__list']}>
-        {collectionData.map((item, index) => (
-          <li className={styles['trending-collection__item']} key={index}>
+        {collectionData.map((item) => (
+          <li
+            className={styles['trending-collection__item']}
+            key={item.id || item.title}
+          >
             <Collection {...item} />
           </li>
         ))}

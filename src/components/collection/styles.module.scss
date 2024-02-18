@@ -6,6 +6,7 @@
 
   &__main-img {
     border-radius: 2rem;
+    cursor: pointer;
   }
 
   &__inner {
@@ -15,6 +16,7 @@
 
   &__img {
     border-radius: 2rem;
+    cursor: pointer;
   }
 
   &__count {
@@ -27,6 +29,7 @@
     font-weight: 700;
     border-radius: 2rem;
     background-color: var(--color-dark-purple);
+    cursor: pointer;
   }
 
   &__title {
@@ -35,5 +38,8 @@
 
   &__artist {
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
   }
 }

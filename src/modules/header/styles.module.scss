@@ -14,7 +14,18 @@
 
   &__item {
     font-weight: 600;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
+    outline: 1px solid transparent;
+    transition: transform 0.4s, outline-color 0.4s, border-color 0.4s, outline-offset 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline-color: var(--color-light-purple);
+      outline-offset: 0.5rem;
+    }
 
     &.active {
       border-color: var(--color-light-purple);
