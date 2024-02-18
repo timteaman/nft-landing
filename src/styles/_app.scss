@@ -12,4 +12,5 @@ body {
   @include fontFamily('Work Sans');
   color: var(--color-white);
   background-color: var(--color-dark-black);
+  @include custom-scrollbar;
 }
