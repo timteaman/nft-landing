@@ -14,5 +14,10 @@
 
   &__item {
     font-weight: 600;
+    border-bottom: 1px solid transparent;
+
+    &.active {
+      border-color: var(--color-light-purple);
+    }
   }
 }
